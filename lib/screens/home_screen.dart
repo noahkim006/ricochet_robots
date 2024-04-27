@@ -5,9 +5,21 @@ class MyHomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold( 
-      
+    return Scaffold(
+      body: Container(
+        alignment: Alignment.topCenter,
+        child: Column(
+          children: [
+            Title(
+              color: Colors.black,
+              child: const Text(
+                "Ricochet Robots",
+                style: TextStyle(fontSize: 50.0),
+              ),
+            ),
+          ],
+        ),
+      ),
     );
   }
-
 }

@@ -13,13 +13,11 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Ricochet Robots',
       theme: ThemeData(
-        
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home:  const MyHomePage(),
+      debugShowCheckedModeBanner: false,
+      home: const MyHomePage(),
     );
   }
 }
-
-
